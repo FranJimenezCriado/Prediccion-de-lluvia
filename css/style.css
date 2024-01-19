@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #012840;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    width: 100%;
+    gap: 30px;
+    background-color: rgba(245, 222, 179, .1);
+    font-size: 1.5rem;
+}
+
+main {
+    width: 80%;
+    height: 80%;
+    margin-top: 50px;
+    background-color:burlywood;
+    border-radius: 10px;
+}
+
+#iniciar {
+    display: flex;
+    justify-content: center;
+}
+
+#horaActual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: crimson;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 3px solid;
+    border-radius: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color:coral;
+}
+
+#horaActual {
+    font-size: 2.4rem;
+}
+
+#tiempo {
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#tiempo img {
+    width: 80%;
+    padding: 20px 20px;
+}
+
+#tiempoPorHora {
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+}
+
+#tiempoPorHora li {
+    background-color: crimson;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 10px;
+    list-style: none;
+    gap: 5px;
+    padding: 15px;
+    font-size: 20px;
+}
