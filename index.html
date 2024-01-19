@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Predicción de lluvia</title>
 </head>
 <body>
 
-    <header><h2>Predicción de lluvia</h2></header>
+    <header>
+        <img class="gif" src="./img/nublado.png" alt="Imagen cabecera">
+        <h2>Predicción de lluvia</h2></header>
 
     <main>
-        <div id="iniciar"><button type="button" id="boton">Obtener predicción de lluvia</button></div>
+        <div id="iniciar">
+            <button style="cursor: pointer" type="button" id="boton">Obtener predicción de lluvia</button>
+        </div>
         <div id="horaActual"></div>
         <div id="tiempo">       
             <ul id="tiempoPorHora"></ul>
