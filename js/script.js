@@ -41,21 +41,12 @@ function lluvia() {
 
         const imagenGif = document.createElement('img');
 
-        if (forecast.some(hour => hour > 0 && hour < 30)) {
+        if (forecast.some(hour => hour > 0)) {
 
             const prediccion = document.getElementById("horaActual");
             const prediccionFinal = document.createElement("div");
             prediccionFinal.className = "prediccionFinal";
-            prediccionFinal.innerHTML = `<p>Hay pocas probabilidades de que llueva en las próximas 8 horas</p>`;
-            
-            prediccion.appendChild(prediccionFinal);
-
-          } else if (hour > 30 && hour < 60) {
-
-            const prediccion = document.getElementById("horaActual");
-            const prediccionFinal = document.createElement("div");
-            prediccionFinal.className = "prediccionFinal";
-            prediccionFinal.innerHTML = `<p>Probablemente llueva en las próximas 8 horas</p>`;
+            prediccionFinal.innerHTML = `<p>Lloverá en las siguientes 8 horas</p>`;
             
             prediccion.appendChild(prediccionFinal);
 
